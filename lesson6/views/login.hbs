@@ -1,0 +1,20 @@
+<form method="POST" action="/auth/login/">
+    <label>
+        Имя пользователя
+        <input type="text" name="username" required="required" placeholder="Введите ваш логин" value="{{ user }}">
+    </label><br>
+    <label>
+        Пароль
+        <input type="password" name="password" required="required" placeholder="Введите ваш пароль" value="{{ password }}">
+    </label><br>
+    <label>
+        Запомнить меня на этом компьютере
+        <input type="checkbox" name="mem">
+    </label> <br>
+    <button type="submit">Войти</button>
+</form>
+<form action="/auth/vkontakte">
+    <label>
+        <button type="submit">Войти через VK</button>
+    </label>
+</form>
